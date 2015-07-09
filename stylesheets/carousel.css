@@ -1,0 +1,34 @@
+div.group input {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+
+div.group input ~ div.content {
+    display: none;
+    /*border: solid 1px black;*/
+    margin: 0px 50px;
+}
+
+div.group input:checked ~ div.content {
+    display: block;
+}
+
+div.group input:checked ~ label.previous, div.group input:checked ~ label.next {
+    display: block;
+}
+
+div.group label {
+    display: inline-block;
+    display: none;
+    text-align: center;
+}
+
+label.previous {
+    float: left;
+}
+
+label.next {
+    float: right;
+}
